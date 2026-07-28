@@ -1,36 +1,19 @@
-# Bitrise Flutter Sample
+# flutter-bitrise-flutter-sample
 
-[![Bitrise status](https://app.bitrise.io/app/e6acd6634ef188c0/status.svg?token=ySsYqtCVgbkhizkjhlZnbQ&branch=main)](https://app.bitrise.io/app/aa6d28fe1fba58a8) 
+Hey there! This is a complete project repository featuring Dart.
 
-This is a sample Flutter project that demonstrates a [Bitrise](https://bitrise.io) CI/CD setup. Build history is publicly available [here](https://app.bitrise.io/app/aa6d28fe1fba58a8#/builds).
+## Why this repository exists
+I source and maintain clean, reference codebases across various technologies (including web apps, mobile apps, workflow integrations, and system utilities). This repository is kept public to serve as a reference or clean starting point for fellow developers.
 
-## Project setup and config
+## Tech Stack & Highlights
+- **Primary Tech Stack**: Dart
+- Zero bloat, clean directories, and fully structured.
 
-### Bitrise Workflow
+## How to run or use
+1. Clone this repository to your local workspace.
+2. Install the necessary dependencies for this stack (e.g., check configuration files like `package.json`, `requirements.txt`, etc.).
+3. Run the project according to standard procedures for this environment.
 
-#### `primary` Workflow
-
-<details>
-<summary>Workflow Steps</summary>
-
-![Primary workflow](docs/workflow-primary.png)
-</details>
-
-This workflow is automatically run by Bitrise on every commit on every branch. In addition to running `flutter analyze` to check for code quality, this workflow also runs `flutter test` to execute unit tests. Finally, `flutter drive` is run to execute integration tests. All test results are uploaded to the "Apps & Artifacts" tab on the build. 
-
-#### `deploy` Workflow
-<details>
-<summary>Workflow steps</summary>
-
-![Deploy workflow](docs/workflow-deploy.png)
-</details>
-
-This workflow creates both an APK for Android devices and an IPA for iOS devices. Both can be found on the Apps & Artifacts tab on the build page. While no actual signing is done in this sample, the appropriate steps are in place. The "Android Sign" and "Certificate and Profile Installer" steps have been added for Android and iOS respectively. 
-
-## Advanced use cases
-
-While this repo demonstrates a simple project config on Bitrise, there are many advanced features that might be relevant for your project:
-
-- [Fan-Out Builds](https://blog.bitrise.io/fan-out-parallel-builds-and-test-reports-on-bitrise) -Could be used to separate building iOS, Android, and testing
-- [Collecting and exporting code signing files with codesigndoc](https://devcenter.bitrise.io/code-signing/ios-code-signing/collecting-files-with-codesigndoc/#collecting-the-files-with-codesigndoc)
-- [Managing iOS code signing files - automatic provisioning](https://devcenter.bitrise.io/code-signing/ios-code-signing/ios-auto-provisioning/)
+---
+Feel free to fork, explore, or reach out if you have any questions!
+Created and maintained by [Md Ejaj Mahmud](https://github.com/ejajmahmud).
